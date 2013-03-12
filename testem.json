@@ -1,0 +1,14 @@
+{
+    "framework": "mocha",
+    "before_tests": "coffee -c test/coffee/*.coffee",
+    "test_page": "test/index.html",
+    "launch_in_dev": [
+        "Chrome",
+        "Safari",
+        "Firefox"
+    ],
+    "launch_in_ci": [
+    	"PhantomJS"
+    ]
+}
+

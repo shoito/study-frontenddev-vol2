@@ -1,84 +1,238 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>フロントエンド開発環境勉強会 - Gruntを中心にTestem, Testacular... | by 伊藤 祥 @shoito</title>
+    
+    <meta name="description" content="フロントエンド開発環境勉強会用資料。Grunt, Yeoman, Testem, Testacular, PhantomJSなどを紹介。" />
+    <meta name="author" content="@shoito" />
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Study-frontenddev-vol2 : " />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link href="js/vendor/impress.js/css/impress-demo.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+<body class="impress-not-supported">
 
-    <title>Study-frontenddev-vol2</title>
-  </head>
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
 
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/shoito/study-frontenddev-vol2">View on GitHub</a>
-
-          <h1 id="project_title">Study-frontenddev-vol2</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/shoito/study-frontenddev-vol2/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/shoito/study-frontenddev-vol2/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
+<div id="impress">
+    <div id="first" data-x="-1100" data-y="-1100" class="step ">
+        <h1>第2回フロントエンド開発環境勉強会</h1>
+        <p>@社内</p>
     </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
+    <div id="aboutme" data-x="-70" data-y="-1100" class="step ">
+        <div>
+            <h2>About me</h2>
+            <ul style="list-style-type: circle;">
+                <li>shoito</li>
+                <li><a href="https://github.com/shoito">https://github.com/shoito</a></li>
+            </ul>
+        </div>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Study-frontenddev-vol2 maintained by <a href="https://github.com/shoito">shoito</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
+    <div id="background" data-x="970" data-y="-1100" class="step ">
+        <div>
+            <h2>Background</h2>
+            <dl class="talk" style="font-size: 0.8em;">
+            <dt>新人さん:</dt>
+            <dd>「IEとかChrome、複数のブラウザで簡単にJSのテスト走らせられないですかね？今度教えてください。」</dd>
+            </dl>
+        </div>
     </div>
 
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-677679-16");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+    <div id="testtools" data-x="2030" data-y="-1100" class="step ">
+        <object type="image/svg+xml" data="img/js-test-tools-today.svg"></object>
+    </div>
 
+    <div id="testrunner" data-x="3040" data-y="-1100" class="step ">
+        <div>
+            <h2>Test Runner</h2>
+            <ul style="list-style-type: circle; margin-left: 46px; font-size: 0.8em;">
+                <li><a href="https://github.com/airportyh/testem#readme" target="_blank">Testem</a></li>
+                <li><a href="http://testacular.github.com/" target="_blank">Testacular</a></li>
+            </ul>
+        </div>
+    </div>
 
-  </body>
+    <div id="gruntis" data-x="-1100" data-y="-200" class="step ">
+        <a href="http://gruntjs.com/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
+            <div style="display: inline-block">
+                <h2>Grunt<span style="font-size: 0.7em;"> - JavaScript Task Runner</span></h2>
+                <ul style="list-style-type: circle; margin-left: 46px; font-size: 0.8em;">
+                    <li>JSHint/JSLint, concat, minify</li>
+                    <li>watch, LiveReload</li>
+                    <li>...more</li>
+                </ul>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="phantomjs" data-x="-70" data-y="-200" class="step ">
+        <a href="http://phantomjs.org/" target="_blank">
+            <img src="img/phantomjs.png"/>
+        </a>
+    </div>
+
+    <div id="testem" data-x="970" data-y="-200" class="step">
+        <h2>How to use Testem</h2>
+        <pre class="snippet" style="font-size: 0.7em; margin-bottom: 36px;">$ npm install testem -g
+$ mkdir project && cd project
+$ testem</pre>
+        <p>testem.json</p>
+        <pre class="snippet" style="font-size: 0.5em;">{
+    "test_page": "test/index.html",
+    "launch_in_dev": [ "Chrome", "Firefox", "IE9" ],
+    "launch_in_ci": [ "PhantomJS" ]
+}</pre>
+        <p style="margin-top: 48px; font-size: 0.4em;">IE9をlaunch_in_devに指定して<a href="https://github.com/airportyh/testem/issues/76">Can't set headers....</a>が表示されて失敗する場合はnode.js v0.8.15くらいにダウングレードするとパスできる（けど...</p>
+    </div>
+
+    <div id="testacular" data-x="2030" data-y="-200" class="step ">
+        <h2>How to use Testacular</h2>
+        <pre class="snippet" style="font-size: 0.7em;">$ npm install testacular -g
+$ mkdir project && cd project
+$ testacular init
+$ testacular start</pre>
+    </div>
+
+    <div id="gruntis-returned" data-x="3040" data-y="-200" class="step ">
+        <a href="http://gruntjs.com/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/grunt-logo.png) no-repeat; width: 300px; height: 340px; display: inline-block; zoom: 0.8;"></span>
+            <div style="display: inline-block">
+                <h2>How to use Grunt</h2>
+                <pre class="snippet" style="font-size: 0.7em;">$ npm install grunt-cli -g
+$ mkdir project && cd project
+$ npm init
+$ npm install grunt --save-dev
+&lt;Define Gruntfile.{js,coffee}&gt;
+$ grunt &lt;task&gt;</pre>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="grunt-init" data-x="-1100" data-y="720" class="step ">
+        <a href="http://gruntjs.com/project-scaffolding" target="_blank">
+            <p style="margin-bottom: 48px;">Gruntfile.{js,coffee}の定義めんどい...</p>
+            <p><b>grunt-initやYeoman</b>あるよ</p>
+        </a>
+    </div>
+
+    <div id="yeoman" data-x="-70" data-y="720" class="step ">
+        <a href="http://yeoman.io/" target="_blank">
+            <img src="img/yeoman.png"/>
+        </a>
+    </div>
+
+    <div id="grunt-case-study" data-x="970" data-y="720" class="step ">
+        <figure>
+            <object type="image/svg+xml" data="img/grunt-case-study.svg"></object>
+            <figurecaption style="font-size: 0.6em;">某事例</figurecaption>
+        </figure>
+    </div>
+
+    <div id="npm" data-x="2030" data-y="720" class="step ">
+        <a href="https://npmjs.org/" target="_blank">
+        <div>
+            <span class="logo" style="background: transparent url(img/npm.png) no-repeat; width: 537px; height: 202px; display: inline-block; zoom: 0.8; margin-right: 32px;"></span>
+            <div style="display: inline-block; vertical-align: top;">
+                <p>grunt-contrib-*</p>
+                <p>grunt-*</p>
+            </div>
+        </div>
+        </a>
+    </div>
+
+    <div id="npm-install" data-x="3040" data-y="720" class="step ">
+        <h2>$ npm install grunt-mocha <b>--save-dev</b></h2>
+        <p style="margin-top: 36px;">package.json</p>
+        <pre class="snippet" style="font-size: 0.7em; margin-bottom: 36px;">devDependencies": {
+    "grunt-mocha": "~0.2.3",
+    ...</pre>
+        <h2>$ npm install</h2>
+    </div>
+
+    <div id="advice" data-x="-1100" data-y="1600" class="step ">
+        <h2>.gitignore</h2>
+        <pre class="snippet" style="font-size: 0.7em;">node_modules/</pre>
+    </div>
+
+    <div id="jenkins" data-x="-70" data-y="1600" class="step ">
+        <object type="image/svg+xml" data="img/jenkins.svg"></object>
+    </div>
+
+    <div id="thanks" data-x="970" data-y="1600" class="step ">
+        <p>「こんなのもあるよ」<br/>「こうするとイイよ」<br/>「こんなの公開してるよ」<br/>という共有よろしくお願いします</p>
+    </div>
+
+    <div id="overview" data-x="1000" data-y="600" data-scale="6" class="step">
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/vendor/jquery/jquery.min.js"></script>
+<script src="js/vendor/impress.js/js/impress.js"></script>
+<script>impress().init();</script>
+
+<!--
+    
+    The `impress()` function also gives you access to the API that controls the presentation.
+    
+    Just store the result of the call:
+    
+        var api = impress();
+    
+    and you will get three functions you can call:
+    
+        `api.init()` - initializes the presentation,
+        `api.next()` - moves to next step of the presentation,
+        `api.prev()` - moves to previous step of the presentation,
+        `api.goto( idx | id | element, [duration] )` - moves the presentation to the step given by its index number
+                id or the DOM element; second parameter can be used to define duration of the transition in ms,
+                but it's optional - if not provided default transition duration for the presentation will be used.
+    
+    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
+    Don't worry, it wont initialize the presentation again.
+    
+    For some example uses of this API check the last part of the source of impress.js where the API
+    is used in event handlers.
+    
+-->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-677679-16']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
 </html>
