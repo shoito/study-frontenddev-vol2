@@ -3,4 +3,4 @@
 
 スライド資料ページへのリンクはこちら
 
-http://shoito.github.com/study-frontenddev-vol2/#/overview
+http://shoito.github.io/study-frontenddev-vol2/
